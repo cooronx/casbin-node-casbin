@@ -114,7 +114,6 @@ jobs:
     name: semantic-relese
     needs:
       - prepare_snapshot_version
-      - publish-npm
     if: >-
       ${{
         github.repository == 'cooronx/casbin-node-casbin' &&
