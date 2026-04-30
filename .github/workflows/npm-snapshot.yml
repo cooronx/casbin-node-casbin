@@ -45,6 +45,6 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           npm version "${{ inputs.npm_version }}" --no-git-tag-version
-          npm publish
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
